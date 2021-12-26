@@ -1,0 +1,499 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+body {
+        font-family: 'Montserrat', sans-serif;
+        background: url(img/BG3.jpg) center center fixed no-repeat;
+        background-size: cover;
+        color: #25283A;
+    }
+#home_but {
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: black;
+    border-radius: 360px;
+    color: white;
+    animation-name:bg;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    text-align: center;
+    line-height: 100px;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+#home_but:hover {
+    background: linear-gradient(60deg, rgba(252,3,246,1) 35% ,rgba(0,255,255,1) 100%);
+    color: white;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+header {
+        width: 100%;
+        background: black;
+        text-align: center;
+        color: white;
+        padding-top: 2%;
+        padding-bottom: 2%;
+}
+#logoadp
+{
+    color: black;
+    flex-basis: 50%;
+    font-size: 5em;
+    font-weight: 900;
+    display: none;
+}
+#home {
+        width: 100%;
+        /*background: url(img/BG3.jpg) center center fixed no-repeat;*/
+        text-align: center;
+        color: white;
+        padding: 0 5%;
+        display: flex;
+        justify-content: space-between;
+    }
+#home p {
+    color: black;
+    padding: 40px 20px;
+    font-size: 1.6em;
+    font-family: Impact;
+}
+.logo {
+    margin: -180px 0 50px 0;
+    flex-basis: 60%;
+
+}
+#pag1 {
+        width: 100%;
+        background: black;
+        color: white;
+        padding: auto;
+        display: flex;
+    }
+#pag1 p {
+    font-size: 1em;
+    line-height: 2;
+    margin-bottom: 1.4em;
+}
+.btn-danger {
+    height: 40px;
+    width: 150px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 7px;
+    background: rgb(0,249,255);
+    background: linear-gradient(36deg, rgba(0,249,255,0.6) 0%, rgba(232,0,231,0.6) 100%); 
+}
+.btn-danger:hover {
+    background: linear-gradient(36deg, rgba(0,249,255,1) 0%, rgba(232,0,231,1) 100%); 
+}
+
+#pag2 {
+        width: 100%;
+        background: black;
+        color: white;
+        padding: auto;
+        display: flex;
+    }
+#pag3 {
+        width: 100%;
+        background: black;
+        text-align: center;
+        color: white;
+        display: flex;
+    }
+#pag4 {
+        width: 100%;
+        background: black;
+        text-align: center;
+        color: white;
+        display: flex;
+    }
+.div {
+    width: 90%;
+    margin: 18px auto;
+    box-shadow: 0px 0px 17px 4px rgba(227, 0, 253, 0.93);
+    padding: 5% 10%;
+    animation-name:bg;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+    border-radius: 40px;
+}
+.div_form {
+    display: flex;
+    justify-content: space-between;
+    margin: 18px auto;
+}
+#pag3 .div {
+    display: flex;
+}
+
+
+#carouselExampleIndicators
+{
+    width: 100%;
+    height: 100%;
+    margin: 2% auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+section .card
+{
+    margin: 20px;
+    text-align: center;
+    flex-basis: 30%;
+}
+section #pag3
+{
+    width: 90%;
+    margin: 4% auto;
+    display: flex;
+    justify-content: center;
+}
+section .card #pag3
+{
+    margin: 20px;
+    text-align: center;
+    flex-basis: 30%;
+}
+#pag3 .card 
+{
+background: rgb(79,0,96);
+background: linear-gradient(66deg, rgba(79,0,96,1) 0%, rgba(17,0,68,1) 100%); 
+color: white;
+border-radius: 0 0 20px 20px;
+}
+#pag3 .card:hover
+{
+transform: scale(1.10);
+transition: 0.5s;
+animation-name:bg;
+animation-iteration-count: infinite;
+animation-duration: 2s;
+}
+.card {
+    border: none;
+}
+header .card
+{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 0 0;
+}
+header input
+{
+    margin: 0 0;
+}
+nav p {
+
+    font-weight: 800;
+    width: 100px;
+    flex-basis: 10%;
+    
+}
+nav a {
+    font-size: 1.2em;
+    font-weight: 800;
+    line-height: 50px;
+    flex-basis: 10%;
+    color: white;
+    height: 50px;
+    text-decoration: none;
+}
+nav a:-webkit-any-link {
+    text-decoration: none;
+    color: white;
+}
+nav a:-moz-any-link {
+    text-decoration: none;
+    color: white;
+}
+nav a:hover {
+    background: linear-gradient(60deg, rgba(252,3,246,0.1) 35% ,rgba(0,255,255,0.1) 100%);
+    border: 10px solid;
+    color: white;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(to left, #18f6ff, #d53a9d);
+}
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+.btn-primary
+{
+    font-size: 1.2em;
+    font-weight: 800;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+}
+.btn-primary:hover
+{
+    background-color: transparent;
+    background: linear-gradient(60deg, rgba(252,3,246,0.1) 35% ,rgba(0,255,255,0.1) 100%);
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(to left, #18f6ff, #d53a9d);
+}
+.btn-check:focus + .btn-primary, .btn-primary:focus
+{
+    box-shadow: none;
+    background-color: transparent;
+    border-color: transparent;
+
+}
+footer
+    {
+        height: 100px;
+        width: 100%;
+        background: black;
+        text-align: center;
+        padding-top: 20px ;
+        color: #aaa;
+        line-height: 1.8em;
+        letter-spacing: 3px;
+    }
+footer span 
+    {
+        font-size: 10px;
+        letter-spacing: normal;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+    }
+footer i:hover
+    {
+        color: rgba(252,3,246,0.8);
+        transition: 0.6s;
+    }
+
+footer a:-webkit-any-link {
+    color: #aaa;
+}
+footer a:-moz-any-link {
+    color: #aaa;
+}
+
+.form_container
+    {
+        background: rgb(162,123,147);
+        background: linear-gradient(60deg, rgba(252,3,246,0.1) 35% ,rgba(0,255,255,0.1) 100%);
+        padding: 4% 3%;
+        flex-basis: 49%;
+        border: 10px solid;
+        border-image-slice: 1;
+        border-width: 2px;
+        border-image-source: linear-gradient(to left, #18f6ff, #d53a9d);
+    }
+    
+.form_container form
+    {
+        margin-top: 40px;
+    }
+
+.form_container h3 
+    {
+        margin-bottom: 4%;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+    }
+
+input, textarea
+    {
+        background: transparent;
+        border: 10px solid;
+        border-image-slice: 1;
+        border-width: 2px;
+        border-image-source: linear-gradient(to left, #18f6ff, #d53a9d);
+        padding: 1%;
+        color: white;
+        display: block;
+        width: 100%;
+        outline: none;
+        resize: none;
+        margin: 25px 0;
+        padding: 1em 1.3em;
+        line-height: 1em;
+        overflow: auto;
+        line-height: 1.3em;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+}
+textarea:hover
+    {
+        background: linear-gradient(60deg, rgba(252,3,246,0.8) 35% ,rgba(0,255,255,0.8) 100%);
+        color: white;
+        transition: 0.8s;
+}
+input:hover
+    {
+        background: linear-gradient(60deg, rgba(252,3,246,0.8) 35% ,rgba(0,255,255,0.8) 100%);
+        color: white;
+        transition: 0.8s;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder
+    {
+    color: white;
+    }
+::-webkit-input-placeholder {
+    color:    white;
+}
+:-moz-placeholder {
+    color:    white;
+}
+::-moz-placeholder {
+    color:    white;
+}
+:-ms-input-placeholder {
+    color:    white;
+}
+
+form button 
+    {
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 7px;
+    background: rgb(0,249,255);
+    background: linear-gradient(36deg, rgba(0,249,255,1) 0%, rgba(232,0,231,1) 100%); 
+    }
+form button:hover
+    {
+        background: white;
+        transition: 0.5s;
+    }
+
+.address_container 
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-basis: 48.5%;
+    }
+
+.address_container div 
+    {
+        flex-basis: 31%;
+        background: rgb(162,123,147);
+        background: linear-gradient(60deg, rgba(252,3,246,0.1) 35% ,rgba(0,255,255,0.1) 100%);
+        padding: 8% 7%;
+        color: #cccccc;
+        border: 10px solid;
+        border-image-slice: 1;
+        border-width: 2px;
+        border-image-source: linear-gradient(to left, #18f6ff, #d53a9d);
+    }
+.address_container div:hover
+    {
+        background: linear-gradient(60deg, rgba(252,3,246,0.8) 35% ,rgba(0,255,255,0.8) 100%);
+        color: white;
+        transition: 0.8s;
+    }
+
+.address_container h3 
+    {
+        margin-bottom: 4%;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+    }
+
+address 
+    {
+        font-style: normal;
+        line-height: 1.8em;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+    }
+
+.address_container div a 
+    {
+        text-decoration: none;
+        color: #ccc;
+        margin-bottom: 10px ;
+        line-height: 1.8em;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+    }
+@keyframes bg
+{
+    0%
+    {
+    box-shadow: 0px 0px 17px 4px rgba(227, 0, 253, 0.93);        
+    }
+    50%
+    {
+    box-shadow: 0px 0px 17px 4px rgba(0, 252, 253, 0.93);
+    }
+    100%
+    {
+    box-shadow: 0px 0px 17px 4px rgba(277, 0, 253, 0.93);      
+    }
+}
+.btn-check:active+.btn-primary:focus, .btn-check:checked+.btn-primary:focus, .btn-primary.active:focus, .btn-primary:active:focus, .show>.btn-primary.dropdown-toggle:focus
+{
+    box-shadow: none;
+}
+@media only screen and (max-width: 1080px) {
+.logo {
+    display: none;
+}
+.div_form {
+    flex-direction: column;
+}
+.form_container {
+    margin: 10px 0;
+}
+.address_container div {
+    margin: 10px 0;
+}
+#pag3 .div {
+    flex-direction: column;}
+img {
+    width: 100%;
+}
+nav {
+    font-size: 0.8em;
+    flex-wrap: wrap;
+    
+}
+nav a:nth-child(4) {
+    flex-basis: 15%;  
+}
+nav a {
+    min-width: 100px;
+}
+header .card {
+    position: static;
+}
+#home_but {
+    display: none;
+}
+#pag2 {
+height: ;
+}
+#logoadp
+{
+    color: black;
+    
+    font-size: 5em;
+    font-weight: 900;
+    display: block;
+}
+#home {
+    display: block;
+}
+
+}
